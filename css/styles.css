@@ -37,6 +37,14 @@ h6,
 p {
   margin: 0;
 }
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+ 
+}
 
 /* body - color text paragraf */
 body {
@@ -52,11 +60,13 @@ body {
   margin: 0;
 }
 .container {
-  max-width: 1128;
+  max-width: 1158px;
+  min-width: 1128px;
+    /* width: 500px; */
   padding: 0 15px 0 15px;
   margin: 0 auto;
 }
-.visually-hidden {
+.visually-hidden { /*cкриваємо правильно заголовки*/
   position: absolute;
   width: 1px;
   height: 1px;
@@ -68,22 +78,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* heder */
-/* .nav-div {
-  /* justify-content: end; */
-/* display: flex; */
-/* } */
-.list-nav {
-  display: flex;
-}
-
-.list-nav .item {
-}
-.list-nav .item:not(:last-child) {
-  margin-right: 40px;
-  /* outline: 1px solid black; */
-}
 .link {
   color: var(--body-color); /*#434455; */
   /* убираємо підкреслення з ссилок */
@@ -93,20 +87,28 @@ body {
 .list {
   /* крапки списків */
   list-style: none;
-}
-.header {
-  /* background-color: aqua; */
+  padding: 0;
+  margin: 0;
 
+}
+/* heder */
+.header {
+   /* background-color: tomato;  */
   border-bottom: 1px solid var(--color-border-hader);
+  /* min-width: 1128px; */
   /* border-bottom-color: var(--color-border-hader); */
 }
 .header-div {
   display: flex;
-  /* background-color: aquamarine; */
+  
+}
+.header-div.container {
+   /* background-color: rgb(203, 212, 209);   */
 }
 .header-logo {
-  /* display: block; */
+ display: block; 
   margin-right: 76px;
+
   color: var(--logocolor-left); /* #4d5ae5;*/
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -119,29 +121,51 @@ body {
   color: var(--background-color);
   background-color: var(--background-btn-primary);
 }
+
+.list-nav { 
+  display: flex;
+  padding: 0;
+}
+
+.list-nav .item {
+}
+.list-nav .item:not(:last-child) {
+  margin-right: 40px;
+  /* outline: 1px solid black; */
+}
+
+
+
 .logo-right {
   color: var(--logocolor-right); /*#2e2f42*/
 }
 
 .nav-header {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-right: 332px;
 
-  /* background-color: tomato; */
+  /* background-color: tomato;  */
 }
 nav {
   margin-top: 0;
   margin-bottom: 0;
+  outline: 1px solid red;
+}
+.header.nav-div {
+   margin-top: 0;
+  margin-bottom: 0;
+  
 }
 .link-header.link {
-  /* display: block; */
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: block; 
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 
   color: var(--header-color);
   /* background-color: tomato; */
   /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 .link-header {
   display: block;
@@ -163,7 +187,9 @@ nav {
 /* адреса та номер телефону */
 .address {
   display: flex;
+  align-items: baseline;
   font-style: normal;
+  outline: 1px solid red;
   /* background-color: aqua; */
 }
 .address-list {
@@ -172,18 +198,18 @@ nav {
 
   /* padding: 0 5px 0 5px; */
 }
-.address-list .list-adr:not(:last-child) {
+.address-list .address-item:not(:last-child) {
   margin-right: 40px;
 }
-/* .list-adr + .list-adr {
+/* .laddress-item + .address-item {
   margin-left: 40px;
 } */
 
 .link-addr {
   display: block;
   color: var(--body-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   /* outline: 1px solid red;*/
 }
 .link-addr:hover,
@@ -194,8 +220,15 @@ nav {
 /* main (hero) */
 .hero {
   background-color: var(--background-color-hero);
+  /* width: 1440px; */
+  min-width: 1440px;
+  height: 600px;
 }
 .hero-title {
+  max-width: 496px;
+  margin: 0 auto 0 auto;
+  padding-top: 188px;
+
   color: var(--color-herotitle); /*#ffffff; */
   font-weight: 700;
   font-size: 56px;
@@ -204,6 +237,10 @@ nav {
   letter-spacing: 0.02em;
 }
 .btn-hero {
+margin: 0 auto 0 auto;
+ 
+
+  
   background-color: var(--background-color-btn-hero); /*#4D5AE5*/
   color: var(--color-btn-hero); /*#FFFFFF*/
   font-family: 'Roboto', sans-serif;
@@ -293,7 +330,7 @@ nav {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
+  /* align-items: center; */
   letter-spacing: 0.04em;
 }
 .btn:hover,
