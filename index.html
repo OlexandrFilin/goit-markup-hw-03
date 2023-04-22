@@ -12,39 +12,49 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body class="container">
+  <body list-adr>
     <!-- heder -->
-    <header>
-      <!-- <nav > -->
-      <nav>
-        <!-- logo -->
-        <a href="./index.html" class="link header-logo">
-          Web<span class="logo-right">Studio</span></a
-        >
-        <!-- list -->
-        <ul class="list-nav list">
-          <li>
-            <a href="./index.html" class="link-header  link">Studio</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="link-header  link ">Portfolio</a>
-          </li>
-          <li><a href="" class="link-header link">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-addr link">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="link-addr link">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
+    <header class=" header ">
+      <!-- <div class="nav-div"> -->
+        <!-- <nav > -->
+        <div class="header-div container">
+          <nav class="nav-header">
+            <!-- logo -->
+            <a href="./index.html" class="link header-logo">
+              Web<span class="logo-right">Studio</span></a
+            >
+            <!-- list -->
+            <ul class="list-nav list">
+             <!-- <ul >  -->
+              <li class="item">
+                <a href="./index.html" class="link-header link">Studio</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link-header link">Portfolio</a>
+              </li class="item">
+              <li class="item"><a href="" class="link-header link">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="list-adr">
+                <a href="mailto:info@devstudio.com" class="link-addr link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list-adr">
+                <a href="tel:+110001111111" class="link-addr link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      <!-- </div> -->
     </header>
     <main>
       <!--section1 main (hero)-->
@@ -57,7 +67,7 @@
         <!-- <h2 class="visually-hidden">Features</h2> -->
         <h2 hidden class="visually-hidden">Features</h2>
         <ul class="list-other list">
-          <li class="about-item">   
+          <li class="about-item">
             <h3 class="header-three">Strategy</h3>
             <p class="about-text">
               Our goal is to identify the business problem to walk away with the
@@ -116,7 +126,7 @@
       </section>
       <!-- section4 You team -->
       <section class="section-ourteam">
-        <h2 class="header-two ">Our Team</h2>
+        <h2 class="header-two">Our Team</h2>
         <ul class="list-other list">
           <li class="ourteam-list-item">
             <img
@@ -127,7 +137,7 @@
             <h3 class="header-three">Mark Guerrero</h3>
             <p class="ourteam-paragraf">Product Designer</p>
           </li>
-          <li  class="ourteam-list-item">
+          <li class="ourteam-list-item">
             <img
               src="./images/section4/tomford.jpg"
               alt="Photo Tom Ford"
@@ -136,7 +146,7 @@
             <h3 class="header-three">Tom Ford</h3>
             <p class="ourteam-paragraf">Frontend Developer</p>
           </li>
-          <li  class="ourteam-list-item">
+          <li class="ourteam-list-item">
             <img
               src="./images/section4/camilagrcia.jpg"
               alt="Photo Camila Garcia"
@@ -145,7 +155,7 @@
             <h3 class="header-three">Camila Garcia</h3>
             <p class="ourteam-paragraf">Marketing</p>
           </li>
-          <li  class="ourteam-list-item" >
+          <li class="ourteam-list-item">
             <img
               src="./images/section4/danielwilson.jpg"
               alt="Photo Daniel Wilson"
