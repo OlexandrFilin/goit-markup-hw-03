@@ -131,7 +131,7 @@ body {
 
 .list-nav .item {
 }
-.list-nav .item:not(:last-child) {
+.item-nav:not(:last-child) {
   margin-right: 40px;
   /* outline: 1px solid black; */
 }
@@ -156,11 +156,15 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
-.list-nav > .item {
+/* .list-nav > .item { */
+.item-nav {
+  /* padding-top: 24px;
+  padding-bottom: 24px;*/
+}
+.link-header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 .link-header.link {
   display: block;
 
@@ -220,10 +224,10 @@ nav {
   /* width: 1440px; */
   min-width: 1440px;
   height: 600px;
-}
-.div-hero {
   padding-top: 188px;
   padding-bottom: 188px;
+}
+.div-hero {
 }
 .hero-title {
   max-width: 496px;
@@ -264,8 +268,10 @@ nav {
   background-color: var(--background-color-btn-hero-active);
 }
 /* section2 Features */
-.div-about {
+.about {
   padding: 120px 0;
+}
+.div-about {
 }
 
 .header-two {
@@ -299,9 +305,7 @@ nav {
 .about-text {
   height: 72px;
 }
-.about {
-  /* margin-bottom: 120px; */
-}
+
 /*section3 What are we doing*/
 .div-wedoing {
   padding-bottom: 120px;
@@ -372,10 +376,10 @@ nav {
 /* footer */
 .footer {
   background-color: var(--header-color);
-}
-.div-footer {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.div-footer {
   height: 312px;
 }
 .footer-logo {
@@ -393,8 +397,8 @@ nav {
   text-transform: uppercase;
 }
 
-.link footer-logo {
-  display: inline;
+.footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
