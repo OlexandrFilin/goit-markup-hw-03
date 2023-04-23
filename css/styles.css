@@ -149,7 +149,7 @@ body {
 nav {
   margin-top: 0;
   margin-bottom: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .header.nav-div {
   margin-top: 0;
@@ -161,9 +161,6 @@ nav {
   padding-bottom: 24px; */
 
   color: var(--header-color);
-  /* background-color: tomato; */
-  /* outline: 1px solid red; */
-  outline: 1px solid red;
 }
 .link-header {
   display: block;
@@ -193,8 +190,6 @@ nav {
 .address-list {
   display: flex;
   padding: 0;
-
-  /* padding: 0 5px 0 5px; */
 }
 .address-list .address-item:not(:last-child) {
   margin-right: 40px;
@@ -328,9 +323,10 @@ nav {
 .div-ourteam .header-two {
   margin-bottom: 72px;
 }
-.div-ourteam .list-other {
+.div-ourteam .list-ourteam {
   display: flex;
 }
+
 .ourteam-list-item {
   width: 264px;
   height: 380px;
@@ -369,8 +365,8 @@ nav {
 }
 .footer-logo {
   display: block;
-  padding-top: 101px;
-  margin-bottom: 17px;
+  padding-top: 101.5px;
+  margin-bottom: 17.5px;
   color: var(--logocolor-left); /* #4d5ae5;*/
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -394,17 +390,20 @@ nav {
 }
 
 /* portfolio */
-
-.header-two-portfolio {
-  font-weight: 500; /**/
-  font-size: 20px; /**/
-  line-height: 1.2; /**/
-  /* identical to box height, or 120% */
-  letter-spacing: 0.02em; /**/
-  color: var(--heder-portfolio-color); /*#2e2f42; */
+.div-works {
+  padding-bottom: 96px;
+}
+.list-btnfiltr {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+  margin: 72px;
 }
 
 .btn {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   color: var(--background-btn-primary); /*#4d5ae5  */
   background-color: var(--color-btn-primari); /* #F4F4FD */
 
@@ -422,11 +421,35 @@ nav {
   background-color: var(--background-color-btn-hero-active); /* 404BBF */
   cursor: pointer;
 }
+.list-works {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
 .link-works {
+}
+.works-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 .link-works:hover,
 .link-works:focus {
 }
+.header-two-portfolio {
+  margin-bottom: 8px;
+  font-weight: 500; /**/
+  font-size: 20px; /**/
+  line-height: 1.2; /**/
+  /* identical to box height, or 120% */
+  letter-spacing: 0.02em; /**/
+  color: var(--heder-portfolio-color); /*#2e2f42; */
+}
+.img-works {
+  margin-bottom: 32px;
+}
+.works-text {
+  margin-bottom: 32px;
+}
+
 .kidworks-paragr {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
