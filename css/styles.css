@@ -92,7 +92,7 @@ body {
   padding: 0;
   margin: 0;
 }
-/* heder */
+/* -----------------------------------------------heder -----------------------------------------------------*/
 .header {
   /* background-color: tomato;  */
   height: 72px;
@@ -218,7 +218,7 @@ nav {
   color: var(--color-btn-hero-active);
 }
 
-/* main (hero) */
+/* -----------------------main (hero) -----------------------------------------------------*/
 .hero {
   background-color: var(--background-color-hero);
   /* width: 1440px; */
@@ -267,7 +267,7 @@ nav {
 .btn-hero:focus {
   background-color: var(--background-color-btn-hero-active);
 }
-/* section2 Features */
+/* --------------------------section2 Features---------------------------------- */
 .about {
   padding: 120px 0;
 }
@@ -306,9 +306,11 @@ nav {
   height: 72px;
 }
 
-/*section3 What are we doing*/
-.div-wedoing {
+/*-------------------section3 What are we doing--------------------------*/
+.wedoing {
   padding-bottom: 120px;
+}
+.div-wedoing {
 }
 .wedoing .header-two {
   margin-bottom: 72px;
@@ -324,15 +326,14 @@ nav {
   /* margin-bottom: 120px; */
 }
 
-/*section4 You team */
+/*--------------------section4 You team ----------------------------------------------------------------------------*/
 .section-ourteam {
   background-color: var(--background-color-ourteam); /* : #F4F4FD; */
   height: 732px;
-  /* margin-bottom: 120px; */
-}
-.div-ourteam {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.div-ourteam {
 }
 .div-ourteam .header-two {
   margin-bottom: 72px;
@@ -373,7 +374,7 @@ nav {
   padding-left: 16px;
   padding-right: 16px;
 }
-/* footer */
+/*---------------------------- footer -------------------------------------------------------------------------------------*/
 .footer {
   background-color: var(--header-color);
   padding-top: 100px;
@@ -413,22 +414,34 @@ nav {
   color: var(--footer-paragraf-color); /*#f4f4fd;*/
 }
 
-/* portfolio */
+/* --!!!!!!!!!!!!!!!!!!!!!!!!!!!-portfolio --!!!!!!!!!!!!!!!!!!!!!--------------*/
+/* --------section works --------------- */
+.works {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .div-works {
-  padding-bottom: 96px;
 }
 .list-btnfiltr {
   display: flex;
-  column-gap: 24px;
+  /* column-gap: 24px;*/
+  gap: 24px;
   justify-content: center;
   margin: 72px;
 }
 
 .btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--color-border-hader); /*#e7e9fc; */
   border-radius: 4px;
+
   color: var(--background-btn-primary); /*#4d5ae5  */
+
   background-color: var(--color-btn-primari); /* #F4F4FD */
 
   font-family: inherit;
@@ -440,6 +453,7 @@ nav {
 }
 .btn:hover,
 .btn:focus {
+  border: 1px solid transparent;
   /*color: var(--color-btn-primari);  #F4F4FD  */
   color: var(--color-btn-hero); /* #FFFFFF  */
   background-color: var(--background-color-btn-hero-active); /* 404BBF */
