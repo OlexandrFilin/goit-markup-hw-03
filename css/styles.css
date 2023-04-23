@@ -141,7 +141,7 @@ body {
 
 .nav-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-right: 332px;
 
   /* background-color: tomato;  */
@@ -155,10 +155,13 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
+.list-nav > .item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .link-header.link {
   display: block;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 
   color: var(--header-color);
 }
@@ -182,7 +185,7 @@ nav {
 /* адреса та номер телефону */
 .address {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   font-style: normal;
   outline: 1px solid red;
   /* background-color: aqua; */
@@ -239,10 +242,11 @@ nav {
   margin-left: auto;
   margin-right: auto;
   height: 56px;
-  width: 169px;
-
+  min-width: 169px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
   background-color: var(--background-color-btn-hero); /*#4D5AE5*/
   color: var(--color-btn-hero); /*#FFFFFF*/
   font-family: 'Roboto', sans-serif;
@@ -259,6 +263,8 @@ nav {
 }
 /* section2 Features */
 .div-about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .header-two {
@@ -293,9 +299,12 @@ nav {
   height: 72px;
 }
 .about {
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 /*section3 What are we doing*/
+.div-wedoing {
+  padding-bottom: 120px;
+}
 .wedoing .header-two {
   margin-bottom: 72px;
 }
@@ -303,11 +312,11 @@ nav {
   display: flex;
 }
 .wedoing-item:not(:last-child) {
-  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .wedoing {
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 /*section4 You team */
@@ -318,6 +327,7 @@ nav {
 }
 .div-ourteam {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .div-ourteam .header-two {
   margin-bottom: 72px;
@@ -339,21 +349,24 @@ nav {
 }
 .ourteam-paragraf {
   font-size: 16px;
+  text-align: center;
 }
 .ourteam-img {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .div-ourteam .header-three {
   height: 24px;
   margin-bottom: 8px;
   text-align: center;
 }
-.ourteam-paragraf {
-  text-align: center;
-}
+
 .ourteam-name {
   width: 232px;
   height: 56px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 /* footer */
 .footer {
@@ -361,11 +374,13 @@ nav {
 }
 .div-footer {
   height: 312px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   display: block;
-  padding-top: 101.5px;
-  margin-bottom: 17.5px;
+  /* padding-top: 101.5px; */
+  /* margin-bottom: 17.5px; */
   color: var(--logocolor-left); /* #4d5ae5;*/
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -375,6 +390,11 @@ nav {
   align-items: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.link footer-logo {
+  display: inline;
+  margin-bottom: 16px;
 }
 
 .logo-right-footer {
