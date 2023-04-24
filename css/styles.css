@@ -63,7 +63,6 @@ body {
 .container {
   max-width: 1158px;
   min-width: 1128px;
-  /* width: 500px; */
   padding: 0 15px 0 15px;
   margin: 0 auto;
 }
@@ -119,8 +118,8 @@ body {
   text-transform: uppercase;
 }
 .header-logo:hover {
-  color: var(--background-color);
-  background-color: var(--background-btn-primary);
+  /* color: var(--background-color);
+  background-color: var(--background-btn-primary); */
 }
 
 .list-nav {
@@ -192,8 +191,6 @@ nav {
   display: flex;
   align-items: center;
   font-style: normal;
-  outline: 1px solid red;
-  /* background-color: aqua; */
 }
 .address-list {
   display: flex;
@@ -344,7 +341,7 @@ nav {
 
 .ourteam-list-item {
   width: 264px;
-  height: 380px;
+  /* height: 380px; */
   background-color: var(--background-color); /* #ffffff; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -367,8 +364,8 @@ nav {
 }
 
 .ourteam-name {
-  width: 232px;
-  height: 56px;
+  /* width: 232px; */
+  /* height: 56px; */
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
@@ -381,7 +378,7 @@ nav {
   padding-bottom: 100px;
 }
 .div-footer {
-  height: 312px;
+  /* height: 312px; */
 }
 .footer-logo {
   display: block;
@@ -427,7 +424,8 @@ nav {
   /* column-gap: 24px;*/
   gap: 24px;
   justify-content: center;
-  margin: 72px;
+  /* margin: 72px; */
+  margin-bottom: 72px;
 }
 
 .btn {
@@ -435,8 +433,7 @@ nav {
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 24px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   border: 1px solid var(--color-border-hader); /*#e7e9fc; */
   border-radius: 4px;
 
@@ -458,6 +455,8 @@ nav {
   color: var(--color-btn-hero); /* #FFFFFF  */
   background-color: var(--background-color-btn-hero-active); /* 404BBF */
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list-works {
   display: flex;
@@ -483,7 +482,7 @@ nav {
   color: var(--heder-portfolio-color); /*#2e2f42; */
 }
 .img-works {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .works-text {
   /* margin-bottom: 32px; */
